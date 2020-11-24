@@ -1,3 +1,7 @@
+
+git checkout v1.30.2
+
+
 第三方代码：
 /home/bengangs/grpc_013002/abseil-cpp-20200225.2.tar.gz
 /home/bengangs/grpc_013002/c-ares-1.16.1.tar.gz
