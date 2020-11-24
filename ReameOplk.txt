@@ -1,0 +1,18 @@
+第三方代码：
+/home/bengangs/grpc_013002/abseil-cpp-20200225.2.tar.gz
+/home/bengangs/grpc_013002/c-ares-1.16.1.tar.gz
+/home/bengangs/grpc_013002/protobuf-cpp-3.12.4.tar.gz
+/home/bengangs/grpc_013002/zlib-1.2.11.tar.gz
+
+ 
+
+解压以上的第三方代码，拷贝到third_party对应的目录中去（如：cp -rf /protobuf-3.12.4/* third_party/protobuf/)
+
+ 
+
+mkdir -p cmake/build
+cd cmake/build
+cmake ../.. -DgRPC_INSTALL=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_SHARED_LIBS=ON
+make
+sudo make intall
+备注：之前编译报错说ssl的库函数找不到，把openssl（1.1.1g）编译安装之后再编就好了
